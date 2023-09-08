@@ -1,29 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints the lowercase alphabet from 'a' to 'z', excluding 'q' and 'e',
- * using the putchar function.
+ * main - Prints the alphabet without q and e.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char letter = 'a'; // Initialize the letter variable with 'a'
+	int i;
 
-    // Loop to print lowercase letters from 'a' to 'z', excluding 'q' and 'e'
-    while (letter <= 'z')
-    {
-        if (letter != 'q' && letter != 'e') // Exclude 'q' and 'e'
-        {
-            putchar(letter); // Print the current letter
-        }
-        letter++; // Move to the next letter
-    }
-
-    putchar('\n'); // Print a new line
-
-    return (0);
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
 

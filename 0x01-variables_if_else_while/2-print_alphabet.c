@@ -1,18 +1,20 @@
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char letter = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (letter <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		putchar(letter);
-		letter++;
+		putchar(alp[i]);
 	}
-
 	putchar('\n');
-
-	return 0;
+	return (0);
 }
+
