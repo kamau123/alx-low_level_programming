@@ -7,16 +7,6 @@
  * Return: Always 0.
  */
 
-// function prototype
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-
-	return(0);
-}
-
 // function defination
 
 void print_alphabet(void)
@@ -26,7 +16,7 @@ void print_alphabet(void)
 
 	for(i=0; i< 26; i++)
 	{
-		putchar (letters[i]);
+		_putchar (letters[i]);
 	}
-	putchar ('\n');
+	_putchar ('\n');
 }
