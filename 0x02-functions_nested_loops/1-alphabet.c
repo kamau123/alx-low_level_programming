@@ -7,7 +7,7 @@
  * Return: Always 0.
  */
 
-// function defination
+/* function defination*/
 
 void print_alphabet(void)
 {
