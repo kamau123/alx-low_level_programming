@@ -1,42 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: Prints the lowercase alphabet 10 times, followed by a newline.
- *
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
  */
-
-/* Function prototype for _putchar */
-int _putchar(char c)
-{
-    putchar(c);
-    return (c);
-}
-
-/* Function prototype for print_alphabet_x10 */
-void print_alphabet_x10(void);
-
-int main(void)
-{
-    print_alphabet_x10();
-    return (0);
-}
-
-/* Function definition for void print_alphabet_x10(void) */
 void print_alphabet_x10(void)
 {
-    char letters[26] = "abcdefghijklmnopqrstuvwxyz";
-    int i, j;
+	char ch;
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        for (j = 0; j < 26; j++)
-        {
-            _putchar(letters[j]);
-        }
-        _putchar('\n');
-    }
+	i = 0;
+
+	while (i < 10)
+	{
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }
 
