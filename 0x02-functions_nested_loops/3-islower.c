@@ -18,10 +18,10 @@ int _islower(int c)
     {
         if (c == lowercase_Letters[i])
         {
-            return (1); // Character is lowercase
+            return (1);
         }
     }
 
-    return (0); // Character is not lowercase
+    return (0); 
 }
 
